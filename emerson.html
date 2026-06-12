@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emerson — VK Controls</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue-dark:#0b3d6b;--blue:#1565a8;--blue-light:#4d96d0;--blue-pale:#eaf2fa;
+  --heading:#3b6ea5;--text:#444;--muted:#6b7a89;--white:#fff;--bg:#fff;--bg-soft:#f4f8fc;
+  --font-head:"Baloo 2",sans-serif;--font-body:"Open Sans",Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--font-body);color:var(--text);font-size:16px;line-height:1.7}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:var(--blue)}
+.container{max-width:1180px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--font-head);font-weight:700}
+
+/* ---- Top bar ---- */
+.topbar{background:var(--blue-dark);color:#dce9f5;font-size:14px}
+.topbar .container{display:flex;justify-content:space-between;align-items:center;min-height:44px;flex-wrap:wrap;gap:6px}
+.topbar a{color:#dce9f5}.topbar a:hover{color:#fff}
+
+/* ---- Navbar ---- */
+.navbar{background:#fff;box-shadow:0 1px 6px rgba(0,0,0,.08);position:sticky;top:0;z-index:100}
+.navbar .container{display:flex;align-items:center;justify-content:space-between;height:78px}
+.logo img{height:58px}
+.nav-menu{display:flex;list-style:none;gap:34px;align-items:center}
+.nav-menu a{color:#263238;font-weight:700;font-size:15.5px}
+.nav-menu a:hover{color:var(--blue)}
+
+/* ---- Page banner ---- */
+.banner{background:linear-gradient(rgba(11,61,107,.85),rgba(11,61,107,.85));padding:70px 0;text-align:center;color:#fff}
+.banner h1{font-size:clamp(30px,4vw,46px);margin-bottom:10px}
+.banner .crumb{color:#cfe0f0;font-size:15px}
+.banner .crumb a{color:#cfe0f0}.banner .crumb a:hover{color:#fff}
+
+/* ---- Detail content ---- */
+.detail{padding:70px 0}
+.detail-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:50px;align-items:start}
+.detail-logo{background:#fff;border:1px solid #e8edf2;border-radius:6px;padding:40px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(20,50,80,.08)}
+.detail-logo img{max-height:120px}
+.detail-text h2{color:var(--heading);font-size:30px;margin-bottom:8px}
+.detail-text .tag{color:var(--blue);font-weight:600;margin-bottom:20px;display:block}
+.detail-text p{color:#555;margin-bottom:18px;text-align:justify}
+.detail-text h3{color:#2f3e4d;font-size:20px;margin:26px 0 12px}
+.feat-list{list-style:none}
+.feat-list li{padding:10px 0 10px 28px;position:relative;color:#555}
+.feat-list li::before{content:"✓";position:absolute;left:0;color:var(--blue);font-weight:700}
+.back-btn{display:inline-block;margin-top:30px;background:var(--blue);color:#fff;padding:13px 30px;border-radius:3px;font-weight:700;text-transform:uppercase;letter-spacing:1px;font-size:14px}
+.back-btn:hover{background:#0f4f86}
+
+/* ---- Footer ---- */
+footer{background:var(--blue-dark);color:#dce9f5}
+.footer-bottom{background:#082c4e;text-align:center;padding:20px;font-size:15px}
+.footer-bottom strong{color:#fff}
+
+@media(max-width:860px){.detail-grid{grid-template-columns:1fr;gap:30px}.nav-menu{display:none}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <a href="mailto:info@vkcontrols.com">info@vkcontrols.com</a>
+    <a href="tel:+915224026046">+91 522 4026046</a>
+  </div>
+</div>
+
+<nav class="navbar">
+  <div class="container">
+    <a class="logo" href="index.html"><img src="vk-logo-transparent.png" alt="VK Controls"></a>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#about">About Us</a></li>
+      <li><a href="index.html#work">Our Work</a></li>
+      <li><a href="index.html#products">Products</a></li>
+      <li><a href="index.html#contact">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="banner">
+  <div class="container">
+    <h1>Emerson</h1>
+    <p class="crumb"><a href="index.html">Home</a> / <a href="index.html#work">Our Work</a> / Emerson</p>
+  </div>
+</section>
+
+<section class="detail">
+  <div class="container">
+    <div class="detail-grid">
+      <div class="detail-logo">
+        <img src="emersen.png" alt="Emerson logo">
+      </div>
+      <div class="detail-text">
+        <h2>Emerson — PLC &amp; SCADA</h2>
+        <span class="tag">VK Controls — Industrial Automation &amp; Control</span>
+        <p>Emerson is a global leader in automation technology and engineering. VK Controls provides Emerson's PLC &amp; SCADA systems and process control solutions for a wide range of industrial applications, from small installations to large redundant systems.</p>
+        <p>We offer complete project support — system design, programming, integration, installation and commissioning — helping you automate your processes reliably and efficiently.</p>
+
+        <h3>Solutions We Offer</h3>
+        <ul class="feat-list">
+          <li>PLC systems — from a few points to thousands of I/Os</li>
+          <li>SCADA software &amp; HMI development</li>
+          <li>Redundant &amp; fail-safe control systems</li>
+          <li>Process control &amp; instrumentation</li>
+          <li>System integration, programming &amp; commissioning</li>
+        </ul>
+
+        <a class="back-btn" href="index.html#work">← Back to Our Work</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-bottom">© Copyright 2026 <strong>VK Controls</strong>. All Rights Reserved</div>
+</footer>
+
+</body>
+</html>
