@@ -464,30 +464,29 @@ footer{background:var(--blue-dark);color:#dce9f5}
       <div class="c-card reveal">
         <div class="ring"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></div>
         <h3>Our Address</h3>
-        <p>Basement, BL03 Block-C,<br>Near Kailash Hospital Sector 71 Noida - 201 301 (UP), India</p>
+        <p>Basement, BL03 Block-C,<br>Near Kailash Hospital, Sector 71,<br>Noida - 201 301 (UP), India</p>
       </div>
       <div class="c-card reveal">
         <div class="ring"><svg viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="1.5"/><path d="m4 7 8 6 8-6"/></svg></div>
         <h3>Email Us</h3>
-        <p>sales@vkcontrols.com<br>vkcontrols01@gmail.com<br>
+        <p>sales@vkcontrols.com<br>vkcontrols01@gmail.com</p>
       </div>
       <div class="c-card reveal">
         <div class="ring"><svg viewBox="0 0 24 24"><path d="M7 4.5 9.5 7c.4.4.4 1 .1 1.5l-1 1.6a12.8 12.8 0 0 0 5.3 5.3l1.6-1c.5-.3 1.1-.3 1.5.1l2.5 2.5c.5.5.5 1.3 0 1.8l-1.2 1.2c-.7.7-1.7 1-2.6.7C10.3 19.3 4.7 13.7 3.3 8.3c-.3-.9 0-1.9.7-2.6L5.2 4.5c.5-.5 1.3-.5 1.8 0z"/></svg></div>
         <h3>Call Us</h3>
-        <p>+919999233201<br><p>
+        <p>+91 99992 33201</p>
       </div>
     </div>
-    <form class="contact-form reveal" id="contactForm" novalidate>
+    <form class="contact-form reveal" action="https://formspree.io/f/mwvjrdwj" method="POST">
       <div class="form-row">
-        <div><label class="sr-only" for="cname" style="position:absolute;left:-9999px">Your Name</label><input id="cname" type="text" placeholder="Your Name" required></div>
-        <div><label for="cemail" style="position:absolute;left:-9999px">Your Email</label><input id="cemail" type="email" placeholder="Your Email" required></div>
+        <div><label for="cname" style="position:absolute;left:-9999px">Your Name</label><input id="cname" type="text" name="name" placeholder="Your Name" required></div>
+        <div><label for="cemail" style="position:absolute;left:-9999px">Your Email</label><input id="cemail" type="email" name="email" placeholder="Your Email" required></div>
       </div>
-      <div class="full"><label for="csubject" style="position:absolute;left:-9999px">Subject</label><input id="csubject" type="text" placeholder="Subject" required></div>
+      <div class="full"><label for="csubject" style="position:absolute;left:-9999px">Subject</label><input id="csubject" type="text" name="subject" placeholder="Subject" required></div>
       <label for="cmessage" style="position:absolute;left:-9999px">Message</label>
-      <textarea id="cmessage" placeholder="Message" required></textarea>
+      <textarea id="cmessage" name="message" placeholder="Message" required></textarea>
       <div class="form-center">
         <button class="btn" type="submit">Send Message</button>
-        <div class="form-success" id="formSuccess">Dhanyavaad! Demo form submit ho gaya. Live messages ke liye form service connect karein.</div>
       </div>
     </form>
   </div>
@@ -605,14 +604,6 @@ window.addEventListener('scroll', () => {
 });
 toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: reduced ? 'auto' : 'smooth' }));
 
-/* ---------- Demo form ---------- */
-document.getElementById('contactForm').addEventListener('submit', e => {
-  e.preventDefault();
-  const f = e.target;
-  if (!f.checkValidity()) { f.reportValidity(); return; }
-  document.getElementById('formSuccess').style.display = 'block';
-  f.reset();
-});
 </script>
 </body>
 </html>
